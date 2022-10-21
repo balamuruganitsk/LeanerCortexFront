@@ -40,6 +40,7 @@ Route::get('sop',[HomeController::class,'sop'])->name('sop');
 Route::get('questionaries',[HomeController::class,'questionaries'])->name('questionaries');
 Route::get('studentlogin',[HomeController::class,'studentlogin'])->name('studentlogin');
 Route::get('student',[HomeController::class,'student'])->name('student');
+Route::get('studentdashboard',[HomeController::class,'studentdashboard'])->name('studentdashboard');
 
 
 

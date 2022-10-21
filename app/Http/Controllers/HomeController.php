@@ -124,6 +124,11 @@ class HomeController extends Controller
         return view('studentlogin');
     }
 
+    public function studentdashboard() 
+    {
+        return view('studentdashboard');
+    }
+
 
 
 }

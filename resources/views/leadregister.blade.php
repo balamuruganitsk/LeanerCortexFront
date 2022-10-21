@@ -279,8 +279,8 @@
 			
 			<div class="pd-ltr-20 xs-pd-20-10">
 
-				<div class="card-box mb-30 page-header mb-0">
-					
+			<div class="card-box mb-30 page-header mb-0">
+					<h2 class="h2text">LEAD REGISTER</h2>
 					</div>
 				<div class="min-height-200px">
 					<div class="page-header mb-0">
@@ -315,9 +315,8 @@
                                 class=""
                                 href="#"
                                 role="button"
-                                href="javascript:;" data-toggle="right-sidebar user"
-                            >
-                        <button type="button" class="btn btn-primary">Primary</button>
+                                href="javascript:;" data-toggle="right-sidebar user">
+                        <button type="button" class="btn btn-primary">Advance Search</button>
                         </a>
 									
 								</div>

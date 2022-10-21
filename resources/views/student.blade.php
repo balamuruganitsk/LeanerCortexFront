@@ -10,6 +10,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
     @include('layouts.links')
+    <style>
+
+        
+/ This is copied from https://github.com/blueimp/jQuery-File-Upload/blob/master/css/jquery.fileupload.css /
+.fileinput-button {
+  position: relative;
+  overflow: hidden;
+}
+
+.fileinput-button input {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  opacity: 0;
+  -ms-filter: "alpha(opacity=0)";
+  font-size: 200px;
+  direction: ltr;
+  cursor: pointer;
+}
+
+.thumb {
+  height: 80px;
+  width: 100px;
+  border: 1px solid #000;
+}
+
+ul.thumb-Images li {
+  width: 120px;
+  float: left;
+  display: inline-block;
+  vertical-align: top;
+  height: 120px;
+}
+
+.img-wrap {
+  position: relative;
+  display: inline-block;
+  font-size: 0;
+}
+
+.img-wrap .close {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  z-index: 100;
+  background-color: #d0e5f5;
+  padding: 5px 2px 2px;
+  color: #000;
+  font-weight: bolder;
+  cursor: pointer;
+  opacity: 0.5;
+  font-size: 23px;
+  line-height: 10px;
+  border-radius: 50%;
+}
+
+.img-wrap:hover .close {
+  opacity: 1;
+  background-color: #ff0000;
+}
+
+.FileNameCaptionStyle {
+  font-size: 12px;
+}
+
+    </style>
 </head>
 <body>
 @include('layouts.header')
@@ -127,7 +194,7 @@
         <div class="pd-ltr-20 xs-pd-20-10">
             <div class="min-height-200px">
             <div class="card-box mb-30 page-header mb-0">
-					
+					<h2 class="h2text">STUDENT</h2>
 					</div>
                 <div class="page-header">
                     <div class="row">
@@ -1573,10 +1640,65 @@
                                         <div class="tab-pane fade height-100-p" id="setting5" role="tabpanel">
                                             <div class="profile-setting">
                                                 <form>
-                                                    <div class="container">
-                                                        <div class="profile-edit-list row">
+                                                  
+                                                    
 
-                                                            <div class="row pb-10">
+                                                    <div class="container">
+
+                                                        <div class="col-md-12">
+                                                            <div class="form-group mb-0">
+                                                                <div class="col-xl-12 col-lg-12 col-md-6 mb-20">
+                                                                    <label>Resume Upload</label>  
+                                                                    <div class="card-box height-100-p widget-style3" style="   border-style: dotted;
+                                                                    border-color: #c1c1c1;">
+                                                                        <div class="d-flex flex-wrap">
+                                                                          
+                                                                            <div class="widget-data">
+
+                                                                            <span class=" fileinput-button">
+                                                                                    <span>Drop document or Click here to upload document   <i class="icon-copy fa fa-download" aria-hidden="true"></i></span>
+                                                                                    <input type="file" name="files[]" id="files" multiple accept="image/jpeg, image/png, image/gif,">
+                                                                                </span>
+                                                    
+                                                                            </div>
+                                                                            <div class="widget-icon gray">
+                                                                                <div class="icon" data-color="" >
+                                                                                    <img src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/27_Pdf_File_Type_Adobe_logo_logos-512.png" alt="" srcset="">
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+
+                                                            <div class="form-group mb-0">
+                                                                <div class="col-xl-12 col-lg-12 col-md-6 mb-20">
+                                                                    <label>Documents Upload</label>  
+                                                                    <div class="card-box height-100-p widget-style3" style="   border-style: dotted;
+                                                                    border-color: #c1c1c1;">
+                                                                        <div class="d-flex flex-wrap">
+                                                                          
+                                                                            <div class="widget-data">
+
+                                                                            <span class=" fileinput-button">
+                                                                                    <span>Drop document or Click here to upload document   <i class="icon-copy fa fa-download" aria-hidden="true"></i></span>
+                                                                                    <input type="file" name="files[]" id="files" multiple accept="image/jpeg, image/png, image/gif,">
+                                                                                </span>
+                                                                            </div>
+                                                                            <div class="widget-icon gray">
+                                                                                <div class="icon" data-color="" >
+                                                                                    <img src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/27_Pdf_File_Type_Adobe_logo_logos-512.png" alt="" srcset="">
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                           </div>
+                                                        <div class="profile-edit-list row" style="justify-content: center;">
+
+                                                            <div class="row pb-10 " style="justify-content: center;">
                                                                 <div class="col-xl-4 col-lg-4 col-md-6 mb-20">
                                                                     <div class="card-box height-100-p widget-style3">
                                                                         <div class="d-flex flex-wrap">
@@ -1586,7 +1708,7 @@
                                                                                     PDF Download <i class="icon-copy fa fa-download" aria-hidden="true"></i>
                                                                                 </div>
                                                                             </div>
-                                                                            <div class="widget-icon">
+                                                                            <div class="widget-icon gray">
                                                                                 <div class="icon" data-color="" >
                                                                                     <img src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/27_Pdf_File_Type_Adobe_logo_logos-512.png" alt="" srcset="">
                                                                                 </div>
@@ -1603,7 +1725,7 @@
                                                                                     PDF Download <i class="icon-copy fa fa-download" aria-hidden="true"></i>
                                                                                 </div>
                                                                             </div>
-                                                                            <div class="widget-icon">
+                                                                            <div class="widget-icon gray">
                                                                                 <div class="icon" data-color="" >
                                                                                     <img src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/27_Pdf_File_Type_Adobe_logo_logos-512.png" alt="" srcset="">
                                                                                 </div>
@@ -1620,7 +1742,7 @@
                                                                                     PDF Download <i class="icon-copy fa fa-download" aria-hidden="true"></i>
                                                                                 </div>
                                                                             </div>
-                                                                            <div class="widget-icon">
+                                                                            <div class="widget-icon gray ">
                                                                                 <div class="icon">
                                                                                     <img src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/27_Pdf_File_Type_Adobe_logo_logos-512.png" alt="" srcset="">
                                                                                 </div>

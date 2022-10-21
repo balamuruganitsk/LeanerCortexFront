@@ -67,9 +67,7 @@
 				</div>
 			</div>
 			<div class="header-right">
-				<div class="row">
-					<div class="col-md-6">
-					<div class="header-timer outerClickPooverHide d-flex cp" id="checkOut" data-original-title="" title="">
+			<div class="header-timer outerClickPooverHide d-flex cp" id="checkOut" data-original-title="" title="">
                 <div class="time-hours">
                     <span>07</span></div>
                 <div class="time-semicolon">:</div>
@@ -77,23 +75,7 @@
                     <span>40</span> 
                 </div>
                 <div class="h6 align-self-start mt-3 ml-1">PM</div>
-                <div class="fs-14 pl-3">
-                    <span>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
-                          <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
-                          <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"></path>
-                        </svg>
-                    </span>
-                    <span>CLOCK IN</span>
-                </div>
             </div>
-					</div>
-					<div class="col-md-6"></div>
-				</div>
-				<div class="col-md-6">
-					
-				</div>
-				<div class="col-md-6">
 				<div class="dashboard-setting user-notification">
 					<div class="dropdown">
 						<a
@@ -112,7 +94,7 @@
 					</div>
 				</div>
 				
-				 <div class="dashboard-setting user-notification">
+				<div class="dashboard-setting user-notification">
 					<div class="dropdown">
 						<a
 							class="dropdown-toggle no-arrow"
@@ -132,8 +114,8 @@
 							role="button"
 							data-toggle="dropdown"
 						>
-							<span class="user-icon">
-								<img src="{{ asset('assets/vendors/images/icon_lc.png')}}" alt="" />
+							<span class="user-icon o">
+							<i class="icon-copy fa fa-user" aria-hidden="true"></i>
 							</span>
 							<span class="user-name">Ross C. Lopez</span>
 						</a>
@@ -155,6 +137,106 @@
 						</div>
 					</div>
 				</div>
+				<div class="github-link mb" onclick="myFunction()">
+					<i class="icon-copy bi bi-grid-fill"></i>
 				</div>
 			</div>
 		</div>
+
+		<style>
+	.circ{
+
+width: 35px;
+height: 35px;
+display: flex;
+align-items: center;
+justify-content: center;
+background: rgba(255, 255, 255, 0.2) !important;
+border-radius: 50%;
+color: white;
+
+}
+
+.right-side-bar-info {
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					align-items: center;
+				}
+
+				.right-side-bar-info-inner {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    padding: 12px 0;}
+
+    .github-link.mb {
+        display: none;
+    }
+    .des {
+    display: none;
+}
+
+    @media(max-width:992px){
+		div#checkOut {
+    display: none !important;
+}
+        .right-sideicon {
+    display: none;
+}
+.menu {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: #11101d; */
+    font-size: 16px;
+    /* font-family: sans-ferif; */
+    z-index: 999;
+    background-color: rgb(51 65 72);
+    transition: 0.5s;
+}
+.chat-box .chat-desc ul, .pd-ltr-20 {
+    padding: 20px 5px 0px 5px;
+}
+.github-link.mb {
+                    display: flex;
+                    align-items: center;
+                    color: white;
+                    font-size: 28px;
+                }
+
+                .header-right {
+   
+    padding-right: 25px;
+}
+.des {
+    display: block !important;
+}
+.des {
+    display: flex !important;
+    align-items: center;
+    color: white;
+    padding-left: 15px;
+    font-weight: 400;
+}
+
+.header {
+   
+    background: #334148;
+
+
+    }}
+</style>
+
+<script>
+    function myFunction() {
+      var x = document.getElementById("mb-menus");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+</script>

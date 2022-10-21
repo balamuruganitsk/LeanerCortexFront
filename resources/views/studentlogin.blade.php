@@ -92,7 +92,7 @@
 										-->
 											<a
 												class="btn btn-primary btn-lg btn-block"
-												href="{{route('student')}}"
+												href="{{route('studentdashboard')}}"
 												>Log In</a
 											>
 										</div>

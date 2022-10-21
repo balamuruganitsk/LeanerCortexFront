@@ -140,9 +140,8 @@
 		<div class="main-container">
 			
 			<div class="pd-ltr-20 xs-pd-20-10">
-
-				<div class="card-box mb-30 page-header mb-0">
-					
+			<div class="card-box mb-30 page-header mb-0">
+					<h2 class="h2text">CITY</h2>
 					</div>
 				<div class="min-height-200px">
 					<div class="page-header mb-0">
