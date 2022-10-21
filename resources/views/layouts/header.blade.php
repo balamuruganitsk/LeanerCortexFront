@@ -67,6 +67,33 @@
 				</div>
 			</div>
 			<div class="header-right">
+				<div class="row">
+					<div class="col-md-6">
+					<div class="header-timer outerClickPooverHide d-flex cp" id="checkOut" data-original-title="" title="">
+                <div class="time-hours">
+                    <span>07</span></div>
+                <div class="time-semicolon">:</div>
+                <div class="time-minutes">
+                    <span>40</span> 
+                </div>
+                <div class="h6 align-self-start mt-3 ml-1">PM</div>
+                <div class="fs-14 pl-3">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                          <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+                          <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"></path>
+                        </svg>
+                    </span>
+                    <span>CLOCK IN</span>
+                </div>
+            </div>
+					</div>
+					<div class="col-md-6"></div>
+				</div>
+				<div class="col-md-6">
+					
+				</div>
+				<div class="col-md-6">
 				<div class="dashboard-setting user-notification">
 					<div class="dropdown">
 						<a
@@ -85,7 +112,7 @@
 					</div>
 				</div>
 				
-				<div class="dashboard-setting user-notification">
+				 <div class="dashboard-setting user-notification">
 					<div class="dropdown">
 						<a
 							class="dropdown-toggle no-arrow"
@@ -127,6 +154,7 @@
 							>
 						</div>
 					</div>
+				</div>
 				</div>
 			</div>
 		</div>

@@ -2478,7 +2478,7 @@ body.IE .register-page-wrap .container {
 
 .page-header {
     /* background-color: #fff; */
-    border-radius: 10px;
+    border-radius: 3px;
     /* -webkit-box-shadow: 0 0 28px rgba(0, 0, 0, .08); */
     /* box-shadow: 0 0 28px rgba(0, 0, 0, .08); */
     margin-bottom: 30px;
@@ -6225,5 +6225,19 @@ border-radius: 50%;
   padding: 1px;
   font-size: 17px;
   border-radius: 50%;
+}
+
+h2.h2text {
+    font-size: 17px;
+    color: #555;
+}
+.header-timer {
+    display: flex;
+    align-items: center;
+    height: 62px;
+    padding: 0 22px;
+    font-size: 34px;
+    color: #fff;
+    margin-left: auto;
 }
   
